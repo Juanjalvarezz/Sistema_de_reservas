@@ -50,7 +50,7 @@ class equiposModelo {
             serial=req.serial
             nombre=req.nombre
             descripcion=req.descripcion
-            fechaad=req.fecha_de_adquisicion.toLocaleDateString()
+            fechaad=req.fecha_de_adquisicion
             estatus=req.estatus
             
             var query = connection.query('UPDATE equipos SET serial = ?, nombre = ?, descripcion = ?, fecha_de_adquisicion = ?, estatus = ? WHERE id_equipo = ?', [serial,nombre,descripcion,fechaad,estatus, id], function (error, results, fields) {
