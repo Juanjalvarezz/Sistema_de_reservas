@@ -6,7 +6,7 @@ var personalController = require("../controllers/personal_tecnico");
 router.get('/', function(req, res, next) {
     personalController.Listar()
     .then((respuesta)=>{
-        res.render('personal_tecnico', {respuesta: respuesta});
+        res.render('personal_tecnicos', {respuesta: respuesta});
     })  
 });
   
