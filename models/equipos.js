@@ -22,7 +22,7 @@ class equiposModelo {
                         serial=r.serial
                         nombre=r.nombre
                         descripcion=r.descripcion
-                        fechaad=r.fecha_de_adquisicion
+                        fechaad=r.fecha_de_adquisicion.toLocaleDateString()
                         estatus=r.estatus
                     });
                     let res="Id: " + idequipo + " || Serial: " + serial + " || Nombre: " + nombre + " || Descripcion: " + descripcion + " || Fecha de Adquisicion: " + fechaad + " || Estatus: " + estatus 
