@@ -18,7 +18,7 @@ class espaciosModelo {
                 }else{
                     let espacio=results,id_espacio,nombre,descripcion,direccion,estatus
                     espacio.forEach(r => { 
-                        id_espacio=r.id_equipo
+                        id_espacio=r.id_espacio
                         nombre=r.nombre
                         descripcion=r.descripcion
                         direccion=r.direccion
